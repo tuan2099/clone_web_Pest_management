@@ -42,7 +42,9 @@
 .tw-text-center {
     text-align: center;
 }
-
+li {
+	list-style: none !important;
+}
 #mega-menu-wrap-menu-1 .mega-menu-toggle {
     display: none;
 }
@@ -182,6 +184,63 @@
 .home .box-icon-body h5 {
     margin-top: 0;
 }
+
+.info-item .flag {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.info-item .flag .country_name {
+    text-transform: uppercase;
+}
+
+.info-item .flag .img_flag  {
+    width: 15px;
+    margin : 0px 5px 0px 0px !important;
+}
+.flag_container {
+    position: relative;
+    z-index: 99;
+}
+.flag_container:hover .list_flag {
+    display : block;
+    transition : 0.25s;
+}
+.flag_container .list_flag {
+    position : absolute; 
+    background-color: white;
+    border-radius: 5px;
+    width: 110px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display : none;
+}
+.flag_container .list_flag ul {
+    padding: 10px;
+    margin-left: 0px !important;
+}
+.flag_container .list_flag ul li {
+    width: 60px;
+    margin: auto ;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding : 10px 0px ;
+    color : black;
+}
+.flag_container .list_flag ul li:hover .country_name{
+    color : blue;
+    transition : 0.25s ;
+}
+.flag_container .list_flag ul li .img_flag {
+    width: 19px;
+    margin : 0px 5px 0px 0px !important;
+}
+
+.flag_container .list_flag ul li .country_name {
+    text-transform: uppercase;
+}
+
 
 .service-item {}
 .service-item .image {
